@@ -1,0 +1,51 @@
+build/
+
+# Build artifacts
+*.o
+*.a
+*.so
+
+# Object files
+*.lo
+
+# Executables (if building in root)
+bin/
+dist/
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+*~
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Build system
+Makefile.local
+config.log
+config.status
+autom4te.cache/
+
+# OS files
+.Thumbs.db
+
+# Rootfs directories (keep structure, ignore contents)
+rootfs/tmp/*
+rootfs/var/*
+rootfs/home/*
+!rootfs/tmp/.gitkeep
+!rootfs/var/.gitkeep
+!rootfs/home/.gitkeep
+
+# Kernel/boot files
+rootfs/boot/vmlinuz*
+rootfs/boot/initramfs*
+rootfs/boot/grub/grubenv
+
+# Test artifacts
+test-output
+*.log
